@@ -21,7 +21,7 @@ const items = [
       color: "from-blue-200 to-violet-200",
       title: "WanderLust",
       desc: "Wanderlust is a travel platform built with JavaScript for the frontend and Node.js with Express for the backend. It allows users to search and add hotels, similar to Airbnb. Featuring authentication with login and signup, it supports CRUD operations for managing users and hotel listings.",
-      img:"./airbnb.png",
+      img:"./airbnb.PNG",
       technology:["JavaScript","Express","MongoDb","Nodejs","EJS"],
             link: "https://airbnb-lite.onrender.com/listing",
             git:"https://github.com/Piyush631/Airbnb_lite"
@@ -31,7 +31,7 @@ const items = [
       color: "from-violet-200 to-purple-200",
       title: "Layers",
       desc: "LayersWebsite is a fully frontend application built with React, TypeScript, and Framer Motion. It features smooth animations and dynamic layering effects for an engaging user experience.",
-      img:"./layers.png",
+      img:"./layers.PNG",
       link: "https://piyush-layers.netlify.app/",
       technology:["TypeScript","React","Framer Motion","Tailwind CSS"],
       git:"https://github.com/Piyush631/Layers"
@@ -41,7 +41,7 @@ const items = [
       color: "from-purple-300 to-red-300",
       title: "Chat Sphere",
       desc: "Developed a real-time chat application using React, TypeScript, and WebRTC for seamless communication. Implemented a modern glass effect UI for an enhanced user experience.",
-      img:"./capture.png",
+      img:"./capture.PNG",
       link: "https://piyush-chatsphere.netlify.app/",
       technology:["TypeScript","WebRtc","React","Framer Motion","Tailwind"],
       git:"https://github.com/Piyush631/chatsphere"
@@ -51,7 +51,7 @@ const items = [
       color: "from-purple-300 to-red-300",
       title: "Power Fitness",
       desc: "Developed a gym website providing users with knowledge of various exercises through videos, images, and tutorials. Built an engaging and informative platform for fitness enthusiasts.",
-      img:"./gym.png",
+      img:"./gym.PNG",
       link: "https://power-fitness-center.netlify.app/",
       git:"https://github.com/Piyush631/powergym",
       technology:["React","JavaScript","API","Tailwind CSS"],
