@@ -82,7 +82,10 @@ export default function Navbar() {
             {link.icon}
           </a>
         ))}
-         <div onClick={toggleDarkMode}>
+      
+      </div>
+     
+      <div className="hidden md:flex text-2xl" onClick={toggleDarkMode}>
           {
             darkMode ? <IoMoonOutline />:<IoSunny/> 
 
@@ -92,13 +95,19 @@ export default function Navbar() {
 
          
          </div>
-      </div>
-     
-    
   
-      <div>
+      <div className="  flex items-center justify-center gap-4">
 
-      
+      <div className="md:hidden flex text-xl" onClick={toggleDarkMode}>
+          {
+            darkMode ? <IoMoonOutline />:<IoSunny/> 
+
+
+          }
+       
+
+         
+         </div>
       {open ? (
         <div
         onClick={() => setOpen(false)}

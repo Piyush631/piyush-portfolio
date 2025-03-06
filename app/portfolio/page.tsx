@@ -41,7 +41,7 @@ const items = [
       color: "from-purple-300 to-red-300",
       title: "Chat Sphere",
       desc: "Developed a real-time chat application using React, TypeScript, and WebRTC for seamless communication. Implemented a modern glass effect UI for an enhanced user experience.",
-      img:"./capture.PNG",
+      img:"./Capture.PNG",
       link: "https://piyush-chatsphere.netlify.app/",
       technology:["TypeScript","WebRtc","React","Framer Motion","Tailwind"],
       git:"https://github.com/Piyush631/chatsphere"
