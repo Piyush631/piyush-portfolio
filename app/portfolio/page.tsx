@@ -63,7 +63,7 @@ export default function Portfolio(){
     const{scrollYProgress} =useScroll({target:scrollref})
     const x=useTransform(scrollYProgress,[0,1],["0%","-80%"])
     const iscardref=useRef<HTMLDivElement>(null)
-    const card=useInView(iscardref)
+ 
     const [isHover,setIsHover]=useState(false)
     const csize = 50; 
 
@@ -155,8 +155,8 @@ export default function Portfolio(){
                      
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.8 }}
-                            onMouseEnter={(e)=> setIsHover(true)}
-                            onMouseLeave={(e)=>setIsHover(false)}
+                            onMouseEnter={()=> setIsHover(true)}
+                            onMouseLeave={()=>setIsHover(false)}
                           
                       
                         className="h-52 md:h-56 lg:h-60 cursor-none  w-[300px] md:w-[367px] lg:w-[425px]  ">
@@ -164,7 +164,7 @@ export default function Portfolio(){
                         </motion.div>
                         <div className="w-[300px]  md:w-[367px]  lg:w-[425px] ">{item.desc}</div>
                         <div className="w-[300px]  md:w-[367px]  lg:w-[425px] flex flex-wrap gap-2 text-sm ">{item.technology?.map(m=>
-                          <div className="flex flex-wrap bg-black text-white px-2 py-1 rounded-md hover:bg-white hover:text-black">{m}</div>
+                          <div key={m} className="flex flex-wrap bg-black text-white px-2 py-1 rounded-md hover:bg-white hover:text-black">{m}</div>
                         )}</div>
                         <div className="w-[300px]  md:w-[367px]  lg:w-[425px]  flex gap-3 justify-end">
                         <a  href={item.git} target="_blank" rel="noopener noreferrer">

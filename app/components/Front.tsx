@@ -42,7 +42,7 @@ export default function FrontPage() {
           className="xl:text-7xl lg:text-6xl md:text-4xl  text-3xl font-semibold "
         >
           Hey There,
-          <div>I'm Piyush!</div>
+          <div>I am Piyush!</div>
         </motion.div>
 
         <motion.div variants={listVariant} initial="initial" animate="animate" className="flex flex-col items-start gap-3">

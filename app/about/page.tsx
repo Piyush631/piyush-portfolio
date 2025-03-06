@@ -34,7 +34,7 @@ export default function About(){
               Biography
               </div>
               <div className="text-sm">
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using Content here  content here  making it look like readable English.
               </div>
               <div className="text-sm italic">
               It is a long established fact that a reader will be distracted by the readable content
@@ -91,11 +91,11 @@ export default function About(){
               <div className="flex flex-wrap gap-2">
 
                 {
-                  skills.map((skill)=>
+                  skills.map((skill,index)=>
                 <motion.div
                   initial={{x:-300}}
                   animate={isSkill ? {x:0}:{}}
-          
+                    key={index}
                   transition={{duration:0.5 ,ease:"easeInOut"}}
                   
                   className="bg-black text-white px-2 py-1 rounded-md hover:bg-white hover:text-black cursor-pointer ">{skill} </motion.div>

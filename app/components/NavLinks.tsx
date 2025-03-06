@@ -1,12 +1,8 @@
 "use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-interface nav{
-    url:string
-    title:string
 
-}
-//@ts-ignore
+//@ts-expect-error
 export function Navlinks({link}){
     const pathName=usePathname()
     

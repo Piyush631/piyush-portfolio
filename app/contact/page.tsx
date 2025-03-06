@@ -8,8 +8,7 @@ export default function Contact() {
     const form = useRef<HTMLFormElement | null>(null);
     const[success,setSuccess]=useState(false)
     const [error,setError]=useState(false)
-
-  const sendEmail = (e:any) => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!form.current) return;
@@ -23,7 +22,7 @@ export default function Contact() {
             setSuccess(true)
          form.current?.reset()
         },
-        (error) => {
+        () => {
          setError(true)
         }
       );
@@ -44,7 +43,7 @@ export default function Contact() {
                
 
               
-                <div className="text-4xl md:text-5xl lg:hidden">Let's get in Touch</div>
+                <div className="text-4xl md:text-5xl lg:hidden">Lets get in Touch</div>
                 
                 <div className="text-md">Dear Piyush,</div>
        

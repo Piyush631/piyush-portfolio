@@ -6,7 +6,7 @@ useGLTF.preload("/oldtelephone.glb");
 
 export default function Model() {
   const group = useRef<Group>(null);
-  const { nodes, materials, animations, scene } = useGLTF(
+  const {  scene } = useGLTF(
     "/oldtelephone.glb"
   );
 

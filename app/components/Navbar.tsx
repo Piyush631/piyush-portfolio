@@ -133,8 +133,8 @@ export default function Navbar() {
       >
         <IoClose />
       </motion.div>
-                {nav.map((n) => (
-                  <motion.div
+                {nav.map((n,i) => (
+                  <motion.div key={i}
              variants={navVariant}
                 
                   >
