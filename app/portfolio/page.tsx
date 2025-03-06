@@ -1,5 +1,5 @@
 "use client"
-import { useScroll ,motion, useTransform, useInView, useMotionValue} from "framer-motion"
+import { useScroll ,motion, useTransform, useMotionValue} from "framer-motion"
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react"
 import { FaGithub } from "react-icons/fa6";
