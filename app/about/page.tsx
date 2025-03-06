@@ -57,7 +57,7 @@ export default function About(){
               <motion.svg
   initial={{ opacity: 0.2, y: 0 }}
   animate={{ opacity: 1, y: "10px" }}
-  transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
   viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export default function About(){
             <div ref={skillref} className="flex text-black dark:text-white flex-col gap-8">
               <motion.div
               
-              initial={{x:-300}}
+              initial={{x:-350}}
               animate={isSkill ? {x:0}:{}}
               transition={{duration:0.5 ,ease:"easeInOut"}}
               className="text-3xl font-semibold uppercase">Skills</motion.div>
@@ -93,7 +93,7 @@ export default function About(){
                 {
                   skills.map((skill,index)=>
                 <motion.div
-                  initial={{x:-300}}
+                  initial={{x:-350}}
                   animate={isSkill ? {x:0}:{}}
                     key={index}
                   transition={{duration:0.5 ,ease:"easeInOut"}}
@@ -106,7 +106,7 @@ export default function About(){
               <motion.svg
   initial={{ opacity: 0.2, y: 0 }}
   animate={{ opacity: 1, y: "10px" }}
-  transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
   viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
@@ -130,12 +130,12 @@ export default function About(){
               </div>
             </div>
             {/*experience*/}
-            <div  ref={experience}className=" text-black dark:text-white flex flex-col gap-8">
+            <div  ref={experience}className=" text-black dark:text-white  mt-5 flex flex-col gap-8">
             <motion.div
-             initial={{x:-300}}
+             initial={{x:-350}}
              animate={isExperience ? {x:0}:{}}
              transition={{duration:0.5 ,ease:"easeInOut"}}
-            className="text-3xl font-semibold uppercase">Experience</motion.div>
+            className="text-3xl font-semibold  py-2 uppercase">Experience</motion.div>
             
             <motion.div
              initial={{x:-300}}
@@ -210,12 +210,12 @@ export default function About(){
 
             </div>
 {/* college */}
-<div className="flex flex-col gap-8" ref={education}>
+<div className="flex flex-col gap-8 mt-5" ref={education}>
             <motion.div 
             initial={{x:-300}}
              animate={isEducation ? {x:0}:{}}
              transition={{duration:0.5 ,ease:"easeInOut"}}
-            className="text-3xl font-semibold uppercase">Education</motion.div>
+            className="text-3xl py-2 font-semibold uppercase">Education</motion.div>
             
             < motion.div 
               initial={{x:-300}}
@@ -295,7 +295,7 @@ export default function About(){
           
 
               
-                <div className="mt-4 p-8 pb-16 flex justify-center w-[400px] md:w-[518px]">
+                <div className="mt-4 pt-6 p-8 pb-16 flex justify-center w-[400px] md:w-[518px]">
               <button className="bg-gray-400  dark:bg-white rounded-lg px-2 py-1 ">Download Resume</button>
             </div>
 
