@@ -26,7 +26,7 @@ export default function About(){
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-        <div ref={contref} className="  dark:text-white lg:flex  h-full    no-scrollbar overflow-y-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-12">
+        <div ref={contref} className="  dark:text-white lg:flex  h-full    no-scrollbar overflow-y-auto px-2 sm:px-4 md:px-8 lg:px-14 xl:px-16">
           <div className="left mt-12   lg:w-2/3 lg:pr-0 xl:w-1/2 flex flex-col gap-24 md:gap-28 lg:gap-36">
             {/* biography*/}
             <div className=" dark:text-white text-black flex flex-col gap-8">

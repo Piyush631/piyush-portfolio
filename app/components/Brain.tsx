@@ -19,7 +19,7 @@ export default function Brain({ scrollYProgress }: BrainProps) {
    <svg
   className="h-full w-full  " 
   preserveAspectRatio="xMidYMid meet"
-  viewBox="0 0 840 840" 
+  viewBox="0 0 960 960" 
 >
         <defs>
           <path d="M.416.37V.366L.417.345V.37" id="path-1" />
